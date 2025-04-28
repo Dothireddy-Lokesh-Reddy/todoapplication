@@ -108,7 +108,7 @@ const TodoApp = () => {
                 </span>
                 <button
                   onClick={() => handleDeleteTodo(todo.id)}
-                  className="text-red-400 hover:text-red-300 p-2 rounded-md opacity-0 group-hover:opacity-100 transition-all duration-200"
+                  className="text-red-400 hover:text-red-300 p-2 rounded-md transition-all duration-200"
                 >
                   <Trash2 size={18} className="sm:w-5 sm:h-5" />
                 </button>
