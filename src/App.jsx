@@ -4,6 +4,7 @@ import { CheckCircle, Trash2, Plus, Sun, Moon } from "lucide-react";
 const TodoApp = () => {
   const [todos, setTodos] = useState([]);
   const [input, setInput] = useState("");
+
   // Load todos and theme from localStorage on mount
   useEffect(() => {
     const savedTodos = JSON.parse(localStorage.getItem("todos")) || [];
@@ -47,11 +48,11 @@ const TodoApp = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-900 dark:bg-gray-950 p-4 sm:p-6 transition-colors duration-500">
       <div className="bg-gray-800/80 dark:bg-gray-900/80 shadow-[0_0_15px_rgba(0,255,255,0.3)] rounded-lg p-6 sm:p-8 w-full max-w-md sm:max-w-lg transition-all duration-300 border border-cyan-500/20">
+        {/* Header */}
         <div className="flex justify-between items-center mb-6 sm:mb-8">
           <h1 className="text-3xl sm:text-4xl font-mono font-bold text-cyan-400 dark:text-cyan-300 tracking-wider">
             TODO
           </h1>
-
         </div>
 
         {/* Input Section */}
